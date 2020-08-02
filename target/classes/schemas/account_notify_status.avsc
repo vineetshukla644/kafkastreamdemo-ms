@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "name": "account_name",
+      "type": "string"
+    },
+    {
+      "name": "account_create_time",
+      "type": "string"
+    },
+    {
+      "name": "notify_days",
+      "type": "string"
+    },
+    {
+      "name": "notify_status",
+      "type": "string"
+    }
+  ],
+  "name": "account_notify_status",
+  "namespace": "com.avro.account_notify_status",
+  "type": "record"
+}

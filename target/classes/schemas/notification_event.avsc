@@ -1,0 +1,28 @@
+{
+  "fields": [
+
+    {
+      "name": "notification_event_name",
+      "type": "string"
+    },
+    {
+      "name": "notification_event_time",
+      "type": "string"
+    },
+    {
+      "name": "notification_description",
+      "type": "string"
+    },
+    {
+      "name": "account_name",
+      "type": "string"
+    },
+    {
+      "name": "account_create_time",
+      "type": "string"
+    }
+  ],
+  "name": "notification_event",
+  "namespace": "com.avro.notification.event",
+  "type": "record"
+}

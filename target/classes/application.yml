@@ -1,0 +1,30 @@
+spring.cloud.stream:
+  bindings:
+    process-in-0:
+      destination: account_event
+    process-out-0:
+      destination: account_notification
+  kafka:
+    streams:
+      binder:
+        brokers: 192.168.0.38:9092
+        applicationId: scheduled-notification-sample
+        configuration:
+          commit.interval.ms: 100
+          schema.registry.url: http://192.168.0.38:8081
+          default:
+            key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+#Enable metrics
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: metrics,health
+#Enable logging to debug for spring kafka config
+logging:
+  level:
+    org.springframework.kafka.config: debug
