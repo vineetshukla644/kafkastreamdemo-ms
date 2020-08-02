@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "account_name",
+      "type": "string"
+    },
+    {
+      "name": "account_create_time",
+      "type": "string"
+    },
+    {
+      "name": "notify_days",
+      "type": "string"
+    }
+  ],
+  "name": "account_create_event",
+  "namespace": "com.avro.accountcreate.event",
+  "type": "record"
+}
